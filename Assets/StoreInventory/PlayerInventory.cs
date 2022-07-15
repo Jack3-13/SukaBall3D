@@ -6,6 +6,6 @@ using UnityEngine;
 public class PlayerInventory : ScriptableObject
 {
 
-    public List<Item> itemlist = new List<Item>(3);
+    public List<Item> itemlist = new List<Item>();
 
 }

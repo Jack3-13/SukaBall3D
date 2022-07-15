@@ -8,6 +8,7 @@ public class Item : ScriptableObject
 {
 
     public string Itemname;
+    [TextArea]
     public string Description;
 
     public Sprite Image;
