@@ -11,7 +11,7 @@ public class Itemdraghandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     public void OnBeginDrag(PointerEventData eventData)
     {
         originalparent = transform.parent;
-        transform.SetParent(transform.parent.parent);
+        transform.SetParent(transform.parent.parent.parent);
         transform.position = eventData.position;
         GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
@@ -30,11 +30,19 @@ public class Itemdraghandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     
         if (eventData.pointerCurrentRaycast.gameObject.name == "Image")
         {
-            Debug.Log("working");
+          
             transform.SetParent(eventData.pointerCurrentRaycast.gameObject.transform.parent.parent);
             transform.position = eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.position;
             eventData.pointerCurrentRaycast.gameObject.transform.parent.position = originalparent.position;
             eventData.pointerCurrentRaycast.gameObject.transform.parent.SetParent(originalparent);
+            GetComponent<CanvasGroup>().blocksRaycasts = true;
+            return;
+        }
+
+        else
+        {
+            transform.SetParent(originalparent);
+            transform.position = originalparent.transform.position;
             GetComponent<CanvasGroup>().blocksRaycasts = true;
             return;
         }

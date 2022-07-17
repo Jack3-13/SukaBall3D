@@ -16,4 +16,6 @@ public class Slot : MonoBehaviour
     {
         InventoryManager.UpdateItemInfo(item.Itemname + item.Description);
     }
+
+
 }
