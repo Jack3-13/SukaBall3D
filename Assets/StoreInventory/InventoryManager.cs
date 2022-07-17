@@ -15,8 +15,7 @@ public class InventoryManager : MonoBehaviour
     public PlayerInventory all;
 
 
-    public Player player1;
-    public Player player2;
+ 
 
     public List<Item> saleitems= new List<Item>();
 
@@ -68,7 +67,39 @@ public class InventoryManager : MonoBehaviour
         
     }
 
+    public static bool AddItem(Item item, PlayerInventory playeritems)
+    {
+        if (!playeritems.itemlist.Contains(item) & item.cost < playeritems.gold)
+        {
+            playeritems.itemlist.Add(item);
+            playeritems.gold -= item.cost;
+            return true;
+        }
 
+        else if (item.cost > playeritems.gold)
+        {
+            Debug.Log("jinbibuzu");
+            return false;
+        }
+
+        else 
+        {
+            Debug.Log("shengji");
+            return false;
+        }
+    }
+
+
+
+    public static void RefundItem(Item item, PlayerInventory playeritems)
+    {
+        if (playeritems.itemlist.Remove(item))
+        {
+            Debug.Log("yichuchenggong");
+            playeritems.gold += item.cost;
+        }
+        
+    }
 
 
 }

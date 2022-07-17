@@ -149,7 +149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d400d52feeb740598c341d53ce534d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalparent: {fileID: 0}
+  player1items: {fileID: 11400000, guid: 06bc70052ce844acb88c0e6ee9f4efcc, type: 2}
+  player2items: {fileID: 11400000, guid: a38c7fcaad4ef474e9f736018c6ab02e, type: 2}
 --- !u!225 &1936386058527446667
 CanvasGroup:
   m_ObjectHideFlags: 0

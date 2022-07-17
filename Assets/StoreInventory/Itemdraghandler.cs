@@ -6,12 +6,18 @@ using UnityEngine.EventSystems;
 public class Itemdraghandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
 
-    public Transform originalparent;
+    private Transform originalparent;
+    private Item transaction;
+    public PlayerInventory player1items;
+    public PlayerInventory player2items;
+
+
 
     public void OnBeginDrag(PointerEventData eventData)
     {
         originalparent = transform.parent;
-        transform.SetParent(transform.parent.parent.parent);
+        transaction = originalparent.GetComponent<Slot>().item;
+        transform.SetParent(transform.parent.parent.parent.parent);
         transform.position = eventData.position;
         GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
@@ -27,28 +33,111 @@ public class Itemdraghandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     public void OnEndDrag(PointerEventData eventData)
     {
 
-    
-        if (eventData.pointerCurrentRaycast.gameObject.name == "Image")
-        {
-          
-            transform.SetParent(eventData.pointerCurrentRaycast.gameObject.transform.parent.parent);
-            transform.position = eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.position;
-            eventData.pointerCurrentRaycast.gameObject.transform.parent.position = originalparent.position;
-            eventData.pointerCurrentRaycast.gameObject.transform.parent.SetParent(originalparent);
-            GetComponent<CanvasGroup>().blocksRaycasts = true;
-            return;
+        /* 从商店到角色道具*/
+        if (originalparent.parent.gameObject.name == "SellItems")
+        { 
+  
+            if (eventData.pointerCurrentRaycast.gameObject.name == "Image"
+                & (eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.parent.gameObject.name == "Items"))
+            {
+
+                /* player1*/
+                if (eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.parent.parent.gameObject.name == "Player1")
+                {
+
+                    if (InventoryManager.AddItem(transaction, player1items))
+                    {
+                        Switchpos(eventData);
+                    }
+                    else
+                    {
+                        Backpos(eventData);
+                    }
+
+                }
+
+                /* player2*/
+                else if (eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.parent.parent.gameObject.name == "Player2")
+                {
+
+                    if (InventoryManager.AddItem(transaction, player2items))
+                    {
+                        Switchpos(eventData);
+                    }
+                    else
+                    {
+                        Backpos(eventData);
+                    }
+
+                }
+
+            }
+
+            else
+            {
+                Backpos(eventData);
+            }
         }
 
-        else
-        {
-            transform.SetParent(originalparent);
-            transform.position = originalparent.transform.position;
-            GetComponent<CanvasGroup>().blocksRaycasts = true;
-            return;
-        }
 
+        /* 从角色退回到商店*/
+        else if (originalparent.parent.gameObject.name == "Items")
+        {
+            if (eventData.pointerCurrentRaycast.gameObject.name == "Image"
+               & (eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.parent.gameObject.name == "SellItems"))
+            {
+
+                /* player1*/
+                if (originalparent.parent.parent.gameObject.name == "Player1")
+                {
+
+                    InventoryManager.RefundItem(transaction, player1items);
+                    Switchpos(eventData);
+                    
+
+                }
+
+                /* player2*/
+                else if (originalparent.parent.parent.gameObject.name == "Player2")
+                {
+
+                    InventoryManager.RefundItem(transaction, player2items);
+                    Switchpos(eventData);
+
+                }
+            }
+
+            else
+            {
+                Backpos(eventData);
+            }
+        }
        
     }
 
-    
+
+    private void Switchpos(PointerEventData eventData)
+    {
+        transform.SetParent(eventData.pointerCurrentRaycast.gameObject.transform.parent.parent);
+        transform.position = eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.position;
+        transform.parent.GetComponent<Slot>().item = transaction;
+        eventData.pointerCurrentRaycast.gameObject.transform.parent.position = originalparent.position;
+        eventData.pointerCurrentRaycast.gameObject.transform.parent.SetParent(originalparent);
+        GetComponent<CanvasGroup>().blocksRaycasts = true;
+        return;
+    }
+
+
+
+    private void Backpos(PointerEventData eventData)
+    {
+        transform.SetParent(originalparent);
+        transform.position = originalparent.transform.position;
+        GetComponent<CanvasGroup>().blocksRaycasts = true;
+        return;
+    }
+
+
+   
+
 }

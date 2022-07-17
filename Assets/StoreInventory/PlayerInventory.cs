@@ -8,4 +8,6 @@ public class PlayerInventory : ScriptableObject
 
     public List<Item> itemlist = new List<Item>();
 
+    public int gold;
+
 }
