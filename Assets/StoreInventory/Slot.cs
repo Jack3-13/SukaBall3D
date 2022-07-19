@@ -12,10 +12,20 @@ public class Slot : MonoBehaviour
     
     public Text cost;
 
+
+    public void start()
+    {
+
+        itemicon.color = new Color(255,255,255,0);
+
+    }
+
     public void ItemOnclicked()
     {
         InventoryManager.UpdateItemInfo(item.Itemname + item.Description);
     }
+
+   
 
 
 }

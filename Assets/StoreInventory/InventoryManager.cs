@@ -26,6 +26,9 @@ public class InventoryManager : MonoBehaviour
     public GameObject player2itemgrid;
 
     public Text iteminfo;
+    public Text player1gold;
+    public Text player2gold;
+
 
     void Awake()
     {
@@ -38,6 +41,7 @@ public class InventoryManager : MonoBehaviour
     private void OnEnable()
     {
         instance.iteminfo.text = "";
+        
     }
 
 
@@ -48,6 +52,21 @@ public class InventoryManager : MonoBehaviour
 
     void Start()
     {
+
+        for (int i = 0; i < 8; i++)
+        {
+            int index = Random.Range(0,all.itemlist.Count);
+
+            while (saleitems.Contains(all.itemlist[index]))
+            {
+                index = Random.Range(0, all.itemlist.Count);
+            }
+
+            saleitems.Add(all.itemlist[index]);
+        }
+
+
+
         for (int i = 0; i < itemgrid.transform.childCount; i++)
         {
             GameObject grid = itemgrid.transform.GetChild(i).gameObject;
@@ -62,9 +81,47 @@ public class InventoryManager : MonoBehaviour
 
         }
 
-        
 
-        
+        for (int i = 0; i < player1itemgrid.transform.childCount; i++)
+        {
+            GameObject grid = player1itemgrid.transform.GetChild(i).gameObject;
+            
+
+            Item item = player1item.itemlist[i];
+            
+
+            Slot slot = grid.GetComponent<Slot>();
+
+            slot.item = item;
+            slot.itemicon.sprite = item.Image;
+            slot.cost.text = item.cost.ToString();
+
+        }
+
+
+        for (int i = 0; i < player2itemgrid.transform.childCount; i++)
+        {
+            GameObject grid = player2itemgrid.transform.GetChild(i).gameObject;
+
+            Item item = player2item.itemlist[i];
+            
+
+            Slot slot = grid.GetComponent<Slot>();
+
+            slot.item = item;
+            slot.itemicon.sprite = item.Image;
+            slot.cost.text = item.cost.ToString();
+
+        }
+
+
+    }
+
+
+    public void Update()
+    {
+        instance.player1gold.text = player1item.gold.ToString();
+        instance.player2gold.text = player2item.gold.ToString();
     }
 
     public static bool AddItem(Item item, PlayerInventory playeritems)
@@ -95,7 +152,7 @@ public class InventoryManager : MonoBehaviour
     {
         if (playeritems.itemlist.Remove(item))
         {
-            Debug.Log("yichuchenggong");
+            
             playeritems.gold += item.cost;
         }
         

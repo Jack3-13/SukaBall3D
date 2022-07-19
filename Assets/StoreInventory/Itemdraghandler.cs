@@ -47,7 +47,13 @@ public class Itemdraghandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
                     if (InventoryManager.AddItem(transaction, player1items))
                     {
+                        if (eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.gameObject.GetComponent<Slot>().item != null)
+                        {
+                            InventoryManager.RefundItem(eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.gameObject.GetComponent<Slot>().item, player1items);
+                        }
+
                         Switchpos(eventData);
+                        
                     }
                     else
                     {
@@ -62,6 +68,10 @@ public class Itemdraghandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
                     if (InventoryManager.AddItem(transaction, player2items))
                     {
+                        if (eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.gameObject.GetComponent<Slot>().item != null)
+                        {
+                            InventoryManager.RefundItem(eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.gameObject.GetComponent<Slot>().item, player2items);
+                        }
                         Switchpos(eventData);
                     }
                     else
@@ -90,6 +100,10 @@ public class Itemdraghandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
                 /* player1*/
                 if (originalparent.parent.parent.gameObject.name == "Player1")
                 {
+                    if (eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.gameObject.GetComponent<Slot>().item != null)
+                    {
+                        InventoryManager.AddItem(eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.gameObject.GetComponent<Slot>().item, player1items);
+                    }
 
                     InventoryManager.RefundItem(transaction, player1items);
                     Switchpos(eventData);
@@ -100,7 +114,10 @@ public class Itemdraghandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
                 /* player2*/
                 else if (originalparent.parent.parent.gameObject.name == "Player2")
                 {
-
+                    if (eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.gameObject.GetComponent<Slot>().item != null)
+                    {
+                        InventoryManager.AddItem(eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.gameObject.GetComponent<Slot>().item, player2items);
+                    }
                     InventoryManager.RefundItem(transaction, player2items);
                     Switchpos(eventData);
 
@@ -118,11 +135,13 @@ public class Itemdraghandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
     private void Switchpos(PointerEventData eventData)
     {
+        Item temp = eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.GetComponent<Slot>().item;
         transform.SetParent(eventData.pointerCurrentRaycast.gameObject.transform.parent.parent);
         transform.position = eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.position;
         transform.parent.GetComponent<Slot>().item = transaction;
         eventData.pointerCurrentRaycast.gameObject.transform.parent.position = originalparent.position;
         eventData.pointerCurrentRaycast.gameObject.transform.parent.SetParent(originalparent);
+        originalparent.GetComponent<Slot>().item = temp;
         GetComponent<CanvasGroup>().blocksRaycasts = true;
         return;
     }
