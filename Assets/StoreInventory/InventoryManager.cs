@@ -96,7 +96,7 @@ public class InventoryManager : MonoBehaviour
             slot.itemicon.sprite = item.Image;
             slot.cost.text = item.cost.ToString();
 
-            Debug.Log(i);
+    
         }
 
 

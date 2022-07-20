@@ -12,12 +12,14 @@ public class Posindicator : MonoBehaviour
     private Transform playertrans;
     private Vector3 ballpos;
     private Vector3 playerpos;
+    private GameObject indicator;
 
     // Start is called before the first frame update
     void Start()
     {
         balltrans = ball.GetComponent<Transform>();
         playertrans = player.GetComponent<Transform>();
+        indicator = gameObject.transform.GetChild(0).gameObject;
     }
 
     // Update is called once per frame
@@ -26,23 +28,19 @@ public class Posindicator : MonoBehaviour
         
         ballpos = Camera.main.WorldToScreenPoint(balltrans.position);
         playerpos = Camera.main.WorldToScreenPoint(playertrans.position);
-
-        Debug.Log(balltrans.position);
-       
-        Debug.Log(ballpos);
         
 
         if (ballpos.x < Screen.width
             && ballpos.y < Screen.height
             && ballpos.x > 0 && ballpos.y > 0)
         {
-            gameObject.SetActive(false);
+            indicator.SetActive(false);
             
         }
 
         else
         {
-            gameObject.SetActive(true);
+            indicator.SetActive(true);
 
             OnLinearAlgebra(playerpos, ballpos);
         }
@@ -58,6 +56,9 @@ public class Posindicator : MonoBehaviour
     Vector2 ra = new Vector2(Screen.width - viewLerp, 50);
     Vector2 rb = new Vector2(Screen.width - viewLerp, Screen.height - 50f);
     static float viewLerp = Screen.width * 0.12f;
+
+   
+    
     
     bool GetPoint(Vector2 pos1, Vector2 pos2, Vector2 pos3, Vector2 pos4)
     {
