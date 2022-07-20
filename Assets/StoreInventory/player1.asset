@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: player1
   m_EditorClassIdentifier: 
   itemlist:
-  - {fileID: 11400000, guid: 947f8f672e93540e08c7de116855ca57, type: 2}
+  - {fileID: 11400000, guid: 79202ec5f290541a1ae2aabe7b05582c, type: 2}
+  - {fileID: 11400000, guid: a1fc34d0dab9b4b81bff5229aeeb342b, type: 2}
+  gold: 85
