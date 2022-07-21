@@ -82,7 +82,7 @@ public class InventoryManager : MonoBehaviour
         }
 
 
-        for (int i = 0; i < (player1itemgrid.transform.childCount >= player1item.itemlist.Count? player1item.itemlist.Count : player1itemgrid.transform.childCount); i++)
+        for (int i = 0; i < player1item.itemlist.Count; i++)
         {
             GameObject grid = player1itemgrid.transform.GetChild(i).gameObject;
             
@@ -100,7 +100,7 @@ public class InventoryManager : MonoBehaviour
         }
 
 
-        for (int i = 0; i < (player2itemgrid.transform.childCount >= player2item.itemlist.Count ? player2item.itemlist.Count : player2itemgrid.transform.childCount); i++)
+        for (int i = 0; i < player2item.itemlist.Count; i++)
         {
             GameObject grid = player2itemgrid.transform.GetChild(i).gameObject;
 

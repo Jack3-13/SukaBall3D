@@ -41,24 +41,62 @@ public class Tabmanager : MonoBehaviour
         }
 
 
-        for (int i = 0; i < (player1itemgrid.transform.childCount >= player1item.itemlist.Count ? player1item.itemlist.Count : player1itemgrid.transform.childCount); i++)
+
+
+        if (player1item.itemlist.Count == player1itemgrid.transform.childCount)
         {
-            GameObject grid = player1itemgrid.transform.GetChild(i).gameObject;
+            for (int i = 0; i < player1itemgrid.transform.childCount; i++)
+            {
+
+                GameObject grid = player1itemgrid.transform.GetChild(i).gameObject;
 
 
-            Item item = player1item.itemlist[i];
+                Item item = player1item.itemlist[i];
 
 
-            Slot slot = grid.GetComponent<Slot>();
+                Slot slot = grid.GetComponent<Slot>();
 
-            slot.item = item;
-            slot.itemicon.sprite = item.Image;
-            slot.cost.text = item.cost.ToString();
-
+                slot.item = item;
+                slot.itemicon.sprite = item.Image;
+                slot.cost.text = item.cost.ToString();
+            }
 
         }
 
-        for (int i = 0; i < (player2itemgrid.transform.childCount >= player2item.itemlist.Count ? player2item.itemlist.Count : player2itemgrid.transform.childCount); i++)
+         else if (player1item.itemlist.Count < player1itemgrid.transform.childCount)
+        {
+            for (int i = 0; i < player1item.itemlist.Count; i++)
+            {
+
+                GameObject grid = player1itemgrid.transform.GetChild(i).gameObject;
+
+
+                Item item = player1item.itemlist[i];
+
+
+                Slot slot = grid.GetComponent<Slot>();
+
+                slot.item = item;
+                slot.itemicon.sprite = item.Image;
+                slot.cost.text = item.cost.ToString();
+            }
+
+            for (int i = player1item.itemlist.Count; i < player1itemgrid.transform.childCount; i++)
+            {
+                GameObject grid = player1itemgrid.transform.GetChild(i).gameObject;
+
+
+                Slot slot = grid.GetComponent<Slot>();
+
+                slot.item = null;
+                slot.itemicon.sprite = null;
+                slot.cost.text = "";
+            }
+        }
+
+
+
+        for (int i = 0; i < player2item.itemlist.Count; i++)
         {
             GameObject grid = player2itemgrid.transform.GetChild(i).gameObject;
 
