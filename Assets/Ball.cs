@@ -10,9 +10,11 @@ public class Ball : MonoBehaviour
     public GameObject Player1;
     public GameObject Player2;
     private LayerMask ballTurn;
+    public GameObject BallDestroy;
     // Start is called before the first frame update
     void Start()
     {
+        Timer timer = Timer.createTimer("Timer");
         player = transform.parent;
         rb = GetComponent<Rigidbody2D>();
     }
@@ -22,7 +24,16 @@ public class Ball : MonoBehaviour
     {
 
     }
-
+    void OnComplete()
+    {
+        Debug.Log("complete!");
+        Destroy(BallDestroy);
+    }    //控制计时器完成时要做什么
+    void OnProcess(float p)
+    {
+        //Debug.Log("on process" + p);
+    }
+    //控制计时器进程操作内容
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Block"))
@@ -32,7 +43,7 @@ public class Ball : MonoBehaviour
         if (collision.gameObject.CompareTag("Player1"))
         {
             Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player1"), LayerMask.NameToLayer("BallTurn"), true);
-            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player2"), LayerMask.NameToLayer("BallTurn"), false);
+            /*Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player2"), LayerMask.NameToLayer("BallTurn"), false)*/;
             Debug.Log(1);
             //Player1.GetComponent<Player>().isTurn=false;
             playerScript.isAttack = true;
@@ -45,6 +56,11 @@ public class Ball : MonoBehaviour
             playerScript.isTurn = false;
             playerScript.isAttack = true;
         }
+        //if (GetComponent<Player>().isTurn == false)
+        //{
+        //    Timer.startTiming(10, OnComplete, OnProcess);
+
+        //}
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
