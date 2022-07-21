@@ -1,0 +1,441 @@
+Using pre-set license
+Built from '2021.3/china_unity/release' branch; Version is '2021.3.5f1c1 (23e20ff61267) revision 2351631'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22000) 64bit CoreCountrySpecific' Language: 'zh' Physical Memory: 15774 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+F:\unityHub\2021.3.5f1c1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+F:/Game/Newgame/SukaBall3D1
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+57330
+Successfully changed project path to: F:/Game/Newgame/SukaBall3D1
+F:/Game/Newgame/SukaBall3D1
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+AS: AutoStreaming module initializing.
+Refreshing native plugins compatible for Editor in 86.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.5f1c1 (23e20ff61267)
+[Subsystems] Discovering subsystems at path F:/unityHub/2021.3.5f1c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/Game/Newgame/SukaBall3D1/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Laptop GPU (ID=0x249d)
+    Vendor:   NVIDIA
+    VRAM:     8044 MB
+    Driver:   31.0.15.1659
+Initialize mono
+Mono path[0] = 'F:/unityHub/2021.3.5f1c1/Editor/Data/Managed'
+Mono path[1] = 'F:/unityHub/2021.3.5f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'F:/unityHub/2021.3.5f1c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56024
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: F:/unityHub/2021.3.5f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002284 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 88.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.516 seconds
+Domain Reload Profiling:
+	ReloadAssembly (516ms)
+		BeginReloadAssembly (56ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (374ms)
+			LoadAssemblies (53ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (80ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (21ms)
+			SetupLoadedEditorAssemblies (230ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (88ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (98ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.015229 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\Game\Newgame\SukaBall3D1\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\Game\Newgame\SukaBall3D1\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 84.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.012 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1012ms)
+		BeginReloadAssembly (91ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (822ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (205ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (457ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (85ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (208ms)
+				ProcessInitializeOnLoadMethodAttributes (72ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5247 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (0.6 MB). Loaded Objects now: 5706.
+Memory consumption went from 210.3 MB to 209.6 MB.
+Total: 3.673900 ms (FindLiveObjects: 0.392500 ms CreateObjectMapping: 0.157000 ms MarkObjects: 2.863600 ms  DeleteObjects: 0.260200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 683367.456963 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset
+  artifactKey: Guid(08bdc24ae8c084f4780f6b05df05ca8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset using Guid(08bdc24ae8c084f4780f6b05df05ca8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9be537ce86700a88f60526ca99b01fb') in 0.029904 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.228127 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonUnityNetworking.Utilities.asmdef
+  artifactKey: Guid(a738238285a7a8246af046cbf977522f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonUnityNetworking.Utilities.asmdef using Guid(a738238285a7a8246af046cbf977522f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e30df3467f3af00885cc8038a7f2dff') in 0.006466 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.939515 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PhotonUnityNetworking.Demos.asmdef
+  artifactKey: Guid(35cc2632df2760540bcc67312740008b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PhotonUnityNetworking.Demos.asmdef using Guid(35cc2632df2760540bcc67312740008b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd3eb907c51f241c8fca7ae163e2bfad') in 0.004731 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.470100 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Code/PhotonUnityNetworking.asmdef
+  artifactKey: Guid(57c32fc907df0f54e8e6e8f0d2488336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Code/PhotonUnityNetworking.asmdef using Guid(57c32fc907df0f54e8e6e8f0d2488336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '026ebe2199675ed7475d3fdb526b03bd') in 0.004696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 173.010404 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/11 - Default.mat
+  artifactKey: Guid(b7d67d7d7ddb88542b23886a4b496c77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/11 - Default.mat using Guid(b7d67d7d7ddb88542b23886a4b496c77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a2289b40d2fe254a1851970cfbb6fe2') in 0.212701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/insides_3.mat
+  artifactKey: Guid(cdcec2345c1d1af4da10b1c5d9cbff65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/insides_3.mat using Guid(cdcec2345c1d1af4da10b1c5d9cbff65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6802d729778718b4b9b6efc6c1d227d9') in 0.017043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Materials/Gradient.mat
+  artifactKey: Guid(32e7ed8e6b80b884bbed8260b788648b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Materials/Gradient.mat using Guid(32e7ed8e6b80b884bbed8260b788648b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8d385c66a8da6e53ff518f9befd3cca') in 0.052541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin/eurof35.ttf
+  artifactKey: Guid(954746d370bc8934299c8c8267543f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin/eurof35.ttf using Guid(954746d370bc8934299c8c8267543f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcb141fafbf4f97d2e6e029872ab0a95') in 0.035619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Materials/FlyerPlayership.mat
+  artifactKey: Guid(99fced4bc2985174cac8512dc765d2bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Materials/FlyerPlayership.mat using Guid(99fced4bc2985174cac8512dc765d2bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc8e1c94c0e65ef1dcc650cc2737db0c') in 0.047214 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoProcedural/Materials/Orange.mat
+  artifactKey: Guid(09adc4af150569a4cb996354c367b8c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoProcedural/Materials/Orange.mat using Guid(09adc4af150569a4cb996354c367b8c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1181ddfb052ee71da5502a6b799b9b70') in 0.017101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/No Name.mat
+  artifactKey: Guid(a773bd7a075f9534e9c9ed1eb6e9a30f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/No Name.mat using Guid(a773bd7a075f9534e9c9ed1eb6e9a30f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56d670507f0fca9618b598596b2c6753') in 0.014418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/13 - Default22662.mat
+  artifactKey: Guid(7d91274cc4a876a439f75445704f421b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/13 - Default22662.mat using Guid(7d91274cc4a876a439f75445704f421b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39f7a0c1b1e3e2b05368a41a38f6c9d7') in 0.013691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/13 - Default54.mat
+  artifactKey: Guid(831e4ea6beda02947bdca5aeb8543156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/13 - Default54.mat using Guid(831e4ea6beda02947bdca5aeb8543156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e5270341a3dd9889db0b9fc2e5a5507') in 0.014424 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin/Jura-Flat-Material.mat
+  artifactKey: Guid(c190da5d14d0e904ba512abe82018576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin/Jura-Flat-Material.mat using Guid(c190da5d14d0e904ba512abe82018576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12065429f852e7eacb362967c81b9077') in 0.012730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/roadRampLongCurvedWall.fbx
+  artifactKey: Guid(002276cc119770f4c8b9797abd47f7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/roadRampLongCurvedWall.fbx using Guid(002276cc119770f4c8b9797abd47f7e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeb90a4ace8694ea3b999d9b05941f03') in 0.088791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/car_3.FBX
+  artifactKey: Guid(09f4942833b61cf429ab5ae4addaacac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/car_3.FBX using Guid(09f4942833b61cf429ab5ae4addaacac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43717e34c48e0481f70e94b383d9cdc8') in 0.109580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Models/Pointer.fbx
+  artifactKey: Guid(0baebe6c8f51e754a96dd7d4dee9bb4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Models/Pointer.fbx using Guid(0baebe6c8f51e754a96dd7d4dee9bb4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d929cbdbe0e0dd8345b5e7dafbcc1d5') in 0.029134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Animations/HumanoidRunTurnSharp.fbx
+  artifactKey: Guid(f2bed5dc5afacff44a00de8daae9703b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Animations/HumanoidRunTurnSharp.fbx using Guid(f2bed5dc5afacff44a00de8daae9703b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a75dee19123e3e37d280f1fe87e05a1f') in 0.016389 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Animations/HumanoidRun.fbx
+  artifactKey: Guid(1cb8ed3cbba15f0479fbae54e0a963df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Animations/HumanoidRun.fbx using Guid(1cb8ed3cbba15f0479fbae54e0a963df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c626ccb03cc6e5b3046d51e1d07e5d77') in 0.014872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Models/FlyerAsteroidB.fbx
+  artifactKey: Guid(757fc9771ce30dc468c775b392518d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Models/FlyerAsteroidB.fbx using Guid(757fc9771ce30dc468c775b392518d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c22018073ffbb3a3e60f4ef12bd91bf5') in 0.021209 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Animations/HumanoidMidAir.fbx
+  artifactKey: Guid(f03e10c73f30b4ab4aa8ea8f1cc16d36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Animations/HumanoidMidAir.fbx using Guid(f03e10c73f30b4ab4aa8ea8f1cc16d36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9e43bbfbf23e200222d13e74230a9ce') in 0.015537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Animations/Materials/EyesMaterial.mat
+  artifactKey: Guid(ce5a83fcea7762541ba43ca5bd854dae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Animations/Materials/EyesMaterial.mat using Guid(ce5a83fcea7762541ba43ca5bd854dae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32db7a5b44d5a823e49a3db03ba2fb7d') in 0.014260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoProcedural/Materials/Black.mat
+  artifactKey: Guid(1598ff147655ecb4893e78f88baa9475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoProcedural/Materials/Black.mat using Guid(1598ff147655ecb4893e78f88baa9475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ce7a2515ea46645e5ae07f9c0160828') in 0.014557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/ground_green232.mat
+  artifactKey: Guid(fd4000dd854ad0e40ba2a59fab94cad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/ground_green232.mat using Guid(fd4000dd854ad0e40ba2a59fab94cad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fb21eeaed959e2bea41127aa9456eaf') in 0.015011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/22 - Default.mat
+  artifactKey: Guid(86080a783905b5740ad2b81f63a2c650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/22 - Default.mat using Guid(86080a783905b5740ad2b81f63a2c650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '967c2b0a4b08ca5e612b00cf24692226') in 0.014989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/bush1.FBX
+  artifactKey: Guid(c8680fab33c72bb4ba3e31987e0b0182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/bush1.FBX using Guid(c8680fab33c72bb4ba3e31987e0b0182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4223ba0abb1fa19d2e3da9ac72032c7') in 0.042348 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/car_1.FBX
+  artifactKey: Guid(1ec55baed88ac07429a52bee4c519015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/car_1.FBX using Guid(1ec55baed88ac07429a52bee4c519015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a31c35597888121b513fc882493508bf') in 0.147698 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/hamvee.FBX
+  artifactKey: Guid(7b912c5dfa554a04296ecbf246180058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/hamvee.FBX using Guid(7b912c5dfa554a04296ecbf246180058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c32ee0a07f951be296237eeb47c3b85') in 0.099436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/tree_6.FBX
+  artifactKey: Guid(45e438e80c2860545b63beb8d6718edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/tree_6.FBX using Guid(45e438e80c2860545b63beb8d6718edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faf84aeb171bcdca2e88b6802123293a') in 0.060644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/roadStartPositions.fbx
+  artifactKey: Guid(f5a5b74b30add9048911cae29679bbce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/roadStartPositions.fbx using Guid(f5a5b74b30add9048911cae29679bbce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adda125ccd6b013c9c2830b209cda465') in 0.022010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/roadCornerSmall.fbx
+  artifactKey: Guid(d873a0d61ff3aa941be0eb85cb9271ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/roadCornerSmall.fbx using Guid(d873a0d61ff3aa941be0eb85cb9271ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea714f12414fd14db8e58adfe2d2f1c1') in 0.021940 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/Jura-Medium-LB.ttf
+  artifactKey: Guid(4a4df204c321f9c40b0dbfb1baaffb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/Jura-Medium-LB.ttf using Guid(4a4df204c321f9c40b0dbfb1baaffb4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d2f605717fa3c26a597d4a19e6b3004') in 0.019731 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/roadStart.fbx
+  artifactKey: Guid(4a85baa15824c004e9265ae93708faf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/roadStart.fbx using Guid(4a85baa15824c004e9265ae93708faf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b894b89edac29f62d2e46db95eae7ed') in 0.022817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/car.mat
+  artifactKey: Guid(c282d31bf082fca4a822239b62ff8257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/car.mat using Guid(c282d31bf082fca4a822239b62ff8257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d8c3768c5b4f27b139fece94d9c7981') in 0.014361 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.585494 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Resources/BigAsteroid.prefab
+  artifactKey: Guid(15f43343ba0a60e47a63d28496373c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Resources/BigAsteroid.prefab using Guid(15f43343ba0a60e47a63d28496373c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12f05445ab5ef646dd08db46b85360b5') in 0.017139 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Prefabs/UI/Button Regular.prefab
+  artifactKey: Guid(395d3cc3d7cf0014a870fee72cbd3490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Prefabs/UI/Button Regular.prefab using Guid(395d3cc3d7cf0014a870fee72cbd3490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '364b1be504f410781933712b39ecf370') in 0.015911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.052289 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Prefabs/Demo Intro UI.prefab
+  artifactKey: Guid(f773d1fa10a4f4e0d88490eab5d5b46d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Prefabs/Demo Intro UI.prefab using Guid(f773d1fa10a4f4e0d88490eab5d5b46d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1b5b9cdd4d0d118ce724e251ac1ff99') in 0.011998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Prefabs/RoomListEntry.prefab
+  artifactKey: Guid(03c5e15309335324fba99d68e38cb08b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Prefabs/RoomListEntry.prefab using Guid(03c5e15309335324fba99d68e38cb08b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71238e38eb9bc4a88b0097111f8177f8') in 0.013164 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Prefabs/PlayerListEntry.prefab
+  artifactKey: Guid(d68bf8413681d9b4aa7328277e632e3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Prefabs/PlayerListEntry.prefab using Guid(d68bf8413681d9b4aa7328277e632e3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7c5159a28cb9c47ee14d9e1cb84cb2c') in 0.014491 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Prefabs/SlotCar_B.prefab
+  artifactKey: Guid(71e3000ee30414d368eeee6d87961b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Prefabs/SlotCar_B.prefab using Guid(71e3000ee30414d368eeee6d87961b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63e05bad00b4355dcbc93fcbb3b04c90') in 0.019096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Prefabs/PlayerOverviewEntry.prefab
+  artifactKey: Guid(f03d1c686a26a1d4da99a4186b0bb1ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Prefabs/PlayerOverviewEntry.prefab using Guid(f03d1c686a26a1d4da99a4186b0bb1ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f67dcedcdb7c3b17cbfb5785f5695146') in 0.012915 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Resources/My Robot Kyle -done-.prefab
+  artifactKey: Guid(fe764102aa5aa431795da15fa2dec0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Resources/My Robot Kyle -done-.prefab using Guid(fe764102aa5aa431795da15fa2dec0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '591e740171f297861d0d6eceaa0b08ba') in 0.047875 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Prefabs/SlotCar_C.prefab
+  artifactKey: Guid(1fd2963e35ed24ba89705127fca0fba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Prefabs/SlotCar_C.prefab using Guid(1fd2963e35ed24ba89705127fca0fba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9c2c16f79c789e537b85e41370834cd') in 0.017768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Prefabs/Tab Toggle.prefab
+  artifactKey: Guid(192c18d73e55e466d89edd9bc2ab936d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Prefabs/Tab Toggle.prefab using Guid(192c18d73e55e466d89edd9bc2ab936d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '265581b9755e34463c290499a19cc652') in 0.015477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Resources/Spaceship.prefab
+  artifactKey: Guid(775dd0a15ad25a544b33ad40ef0da1f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Resources/Spaceship.prefab using Guid(775dd0a15ad25a544b33ad40ef0da1f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77e6f6737ddc372a00a0111d2c59414e') in 0.066651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.733565 seconds.
+  path: Assets/_TerrainAutoUpgrade/layer_UnitTextureBluecc0f254a2c535401.terrainlayer
+  artifactKey: Guid(51cb0f930feac464a8cbb51fafacb7d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_TerrainAutoUpgrade/layer_UnitTextureBluecc0f254a2c535401.terrainlayer using Guid(51cb0f930feac464a8cbb51fafacb7d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34e7a941b45ed2bd02d90d617cb6783d') in 0.017526 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
