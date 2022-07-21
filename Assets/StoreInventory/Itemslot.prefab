@@ -413,6 +413,7 @@ MonoBehaviour:
   item: {fileID: 0}
   itemicon: {fileID: 5345652121450707900}
   cost: {fileID: 2428559741135844238}
+  itempos: {fileID: 531477783917457657}
 --- !u!114 &279879228365756666
 MonoBehaviour:
   m_ObjectHideFlags: 0
