@@ -12,20 +12,15 @@ public class Slot : MonoBehaviour
     
     public Text cost;
 
-    public GameObject itempos;
-
     public void start()
     {
-
+        
     }
 
 
     public void Update()
     {
-        if (item == null)
-        {
-            itempos.SetActive(false);
-        }
+        
     }
 
     public void ItemOnclicked()

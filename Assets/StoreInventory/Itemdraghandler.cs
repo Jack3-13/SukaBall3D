@@ -50,9 +50,14 @@ public class Itemdraghandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
                         if (eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.gameObject.GetComponent<Slot>().item != null)
                         {
                             InventoryManager.RefundItem(eventData.pointerCurrentRaycast.gameObject.transform.parent.parent.gameObject.GetComponent<Slot>().item, player1items);
+                            Switchpos(eventData);
                         }
 
-                        Switchpos(eventData);
+                        else
+                        {
+                            Switchpos(eventData);
+                        }
+                        
                         
                     }
                     else
