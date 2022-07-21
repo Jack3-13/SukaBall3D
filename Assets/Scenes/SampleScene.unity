@@ -2952,6 +2952,7 @@ GameObject:
   - component: {fileID: 888821318}
   - component: {fileID: 888821317}
   - component: {fileID: 888821316}
+  - component: {fileID: 888821319}
   m_Layer: 0
   m_Name: player1
   m_TagString: Player1
@@ -3091,6 +3092,19 @@ MonoBehaviour:
   isAttack: 0
   ball: {fileID: 536688871}
   angle: 30
+--- !u!114 &888821319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888821311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95a6096c2b3d840ac84e04926077e863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playeritems: {fileID: 11400000, guid: 06bc70052ce844acb88c0e6ee9f4efcc, type: 2}
 --- !u!224 &929846013 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2779536910606924272, guid: 01f075ba6ddc44543b57792e0fc4b61d,
@@ -6446,8 +6460,8 @@ MonoBehaviour:
   Score1: {fileID: 0}
   Score2: {fileID: 0}
   Time: {fileID: 0}
-  player1gold: {fileID: 0}
-  player2gold: {fileID: 0}
+  player1gold: {fileID: 1913542765}
+  player2gold: {fileID: 206804991}
   player1item: {fileID: 11400000, guid: 06bc70052ce844acb88c0e6ee9f4efcc, type: 2}
   player2item: {fileID: 11400000, guid: a38c7fcaad4ef474e9f736018c6ab02e, type: 2}
   player1itemgrid: {fileID: 304521752}
